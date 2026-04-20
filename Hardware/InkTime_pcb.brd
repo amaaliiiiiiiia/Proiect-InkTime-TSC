@@ -32,7 +32,7 @@
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -253,6 +253,12 @@
 <dimension x1="16" y1="17.5" x2="16" y2="-17.5" x3="31.5" y3="0" locked="yes" textsize="1.778" layer="51" dtype="vertical"/>
 <dimension x1="-16" y1="6.9" x2="-23" y2="6.9" x3="-19.5" y3="5" locked="yes" textsize="1.778" layer="51" dtype="horizontal"/>
 <dimension x1="-16" y1="6.9" x2="-16" y2="-6.9" x3="-18.6" y3="0" locked="yes" textsize="1.778" layer="51" dtype="horizontal"/>
+<polygon width="0.1524" layer="2" pour="cutout">
+<vertex x="-22.6238" y="-11.0238"/>
+<vertex x="-17.9762" y="-11.0238"/>
+<vertex x="-17.9762" y="-8.3762"/>
+<vertex x="-22.6238" y="-8.3762"/>
+</polygon>
 </plain>
 <libraries>
 <library name="InkTime_v5">
@@ -2120,17 +2126,17 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <board_group name="GND"/>
 </groups>
 <elements>
-<element uuid="0xABCDEF10" name="ANT1" library="InkTime_v5" package="2450AT18B100E_ANTC3216X140N" value="2450AT18B100E" x="-19.8" y="-8.4" smashed="yes" rot="R180">
-<attribute name="ARROW_PART_NUMBER" value="2450AT18B100E" x="-19.8" y="-8.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/2450at18b100e/johanson-dielectrics?utm_currency=USD&amp;region=nac" x="-19.8" y="-8.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value="Antennas 2.45GHz ANTENNA" x="-19.8" y="-8.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="-19.8" y="-8.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="JOHANSON TECHNOLOGY" x="-19.8" y="-8.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="2450AT18B100E" x="-19.8" y="-8.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="609-2450AT18B100E" x="-19.8" y="-8.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Johanson-Technology/2450AT18B100E?qs=yCnrNFeXz%252Bh5MFsFIXGZGA%3D%3D" x="-19.8" y="-8.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-19.8" y="-10.5" size="1.27" layer="25" rot="R180" align="center"/>
-<attribute name="VALUE" x="-19.4" y="-8.7" size="1.27" layer="27" align="center"/>
+<element uuid="0xABCDEF10" name="ANT1" library="InkTime_v5" package="2450AT18B100E_ANTC3216X140N" value="2450AT18B100E" x="-20.4" y="-9.7" smashed="yes" rot="R180">
+<attribute name="ARROW_PART_NUMBER" value="2450AT18B100E" x="-20.4" y="-9.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/2450at18b100e/johanson-dielectrics?utm_currency=USD&amp;region=nac" x="-20.4" y="-9.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="Antennas 2.45GHz ANTENNA" x="-20.4" y="-9.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="1.4mm" x="-20.4" y="-9.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="JOHANSON TECHNOLOGY" x="-20.4" y="-9.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="2450AT18B100E" x="-20.4" y="-9.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="609-2450AT18B100E" x="-20.4" y="-9.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Johanson-Technology/2450AT18B100E?qs=yCnrNFeXz%252Bh5MFsFIXGZGA%3D%3D" x="-20.4" y="-9.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-20.4" y="-11.8" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="-20" y="-10" size="1.27" layer="27" align="center"/>
 </element>
 <element uuid="0xABCDEF7C" name="C1" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_N" value="12pF" x="-4.9" y="-4.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="-4.265" y="-3.965" size="1.27" layer="25" rot="R270"/>
@@ -2195,9 +2201,9 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <attribute name="NAME" x="2.8" y="6.2" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="2.6" y="8.4" size="1.27" layer="27" rot="R270"/>
 </element>
-<element uuid="0xABCDEF52" name="C22" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_N" value="N.C." x="-16.1" y="-10.5" smashed="yes">
-<attribute name="NAME" x="-14.465" y="-10.835" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="-16.735" y="-12.405" size="1.27" layer="27"/>
+<element uuid="0xABCDEF52" name="C22" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_N" value="N.C." x="-17.1" y="-10.6" smashed="yes">
+<attribute name="NAME" x="-15.465" y="-10.935" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="-17.735" y="-12.505" size="1.27" layer="27"/>
 </element>
 <element uuid="0xABCDEF6E" name="C23" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_N" value="0.1uF" x="-2" y="6.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="-4.335" y="4.435" size="1.27" layer="25"/>
@@ -2254,9 +2260,9 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <attribute name="NAME" x="6.3" y="6.3" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="6.5" y="6.7" size="1.27" layer="27" rot="R90"/>
 </element>
-<element uuid="0xABCDEF2C" name="C4" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_N" value="1pF" x="-16.1" y="-9.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="-13.265" y="-9.135" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="-15.465" y="-7.595" size="1.27" layer="27" rot="R180"/>
+<element uuid="0xABCDEF2C" name="C4" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_N" value="1pF" x="-17.1" y="-9.6" smashed="yes" rot="R180">
+<attribute name="NAME" x="-14.265" y="-9.235" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="-16.465" y="-7.695" size="1.27" layer="27" rot="R180"/>
 </element>
 <element uuid="0xABCDEF90" name="C42" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_N" value="0.1uF" x="7.5" y="14.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.035" y="16.765" size="1.27" layer="25" rot="R180"/>
@@ -2283,7 +2289,7 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <attribute name="VALUE" x="-7.235" y="-7.605" size="1.27" layer="27"/>
 </element>
 <element uuid="0xABCDEF66" name="C9" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_N" value="820pF" x="-4.6" y="1.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="-3.965" y="0.565" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="-4.565" y="2.165" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="-3.965" y="3.105" size="1.27" layer="27" rot="R180"/>
 </element>
 <element uuid="0xABCDEF1C" name="D2" library="InkTime_v5" library_urn="urn:adsk.wipprod:fs.file:vf.lST2CZqJQNWJCXA0o-ciPQ" package="ESP32_C6_LIBRARY_5_SOD3716X135N" value="MBR0530" x="-10.7" y="9.9" smashed="yes" rot="R359.9">
@@ -2369,7 +2375,7 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <attribute name="VALUE" x="-10.9" y="-1.5" size="1.27" layer="27"/>
 </element>
 <element uuid="0xABCDEF20" name="EPD_C8" library="InkTime_v5" package="NORDIC_NRF_3_RESC0603_N" value="1uF/50V" x="-9.8" y="-0.5" smashed="yes">
-<attribute name="NAME" x="-10.7" y="0.4" size="1.27" layer="25"/>
+<attribute name="NAME" x="-11.2" y="0" size="1.27" layer="25"/>
 <attribute name="VALUE" x="-10.8" y="-3" size="1.27" layer="27"/>
 </element>
 <element uuid="0xABCDEF3E" name="EPD_C9" library="InkTime_v5" package="NORDIC_NRF_3_RESC0603_N" value="1uF/50V" x="-9.7" y="4.1" smashed="yes">
@@ -2397,7 +2403,7 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="RT6160AWSC" x="-3.8" y="6.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="835-RT6160AWSC" x="-3.8" y="6.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Richtek/RT6160AWSC?qs=amGC7iS6iy%2FLd9PSoixZXQ%3D%3D" x="-3.8" y="6.1" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-3.5" y="7.4" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="-3.6" y="7.4" size="1.27" layer="25" align="center"/>
 <attribute name="VALUE" x="-3.7" y="6.2" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element uuid="0xABCDEF0A" name="IC3" library="InkTime_v5" library_urn="urn:adsk.wipprod:fs.file:vf.lST2CZqJQNWJCXA0o-ciPQ" package="BMA423_BMA423" value="BMA423" x="6.1" y="3.9" smashed="yes">
@@ -2456,9 +2462,9 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/KH-TYPE-C-16P/Kinghelm/view-part/?ref=snap" x="0" y="16.2" locked="yes" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="5.095" y="9.7" locked="yes" size="1.27" layer="27" rot="R180"/>
 </element>
-<element uuid="0xABCDEF2E" name="L1" library="InkTime_v5" package="NORDIC_NRF_2_RESC0201_N" value="3.9nH" x="-16" y="-8.6" smashed="yes" rot="R180">
-<attribute name="NAME" x="-14.965" y="-7.035" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="-15.365" y="-6.695" size="1.27" layer="27" rot="R180"/>
+<element uuid="0xABCDEF2E" name="L1" library="InkTime_v5" package="NORDIC_NRF_2_RESC0201_N" value="3.9nH" x="-17.2" y="-8.6" smashed="yes" rot="R180">
+<attribute name="NAME" x="-16.165" y="-7.035" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="-16.565" y="-6.695" size="1.27" layer="27" rot="R180"/>
 </element>
 <element uuid="0xABCDEF98" name="L2" library="InkTime_v5" package="NORDIC_NRF_2_RESC0201_N" value="10uH" x="2.5" y="-3.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="2.965" y="-4.265" size="1.27" layer="25"/>
@@ -2498,7 +2504,7 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <attribute name="DESCRIPTION" value=" Si1308EDL-T1-GE3 N-channel MOSFET Transistor, 1.5 A, 30 V, 3-Pin SC-70 | Siliconix / Vishay SI1308EDL-T1-GE3 " x="-18.6" y="14.3" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Vishay Siliconix" x="-18.6" y="14.3" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="SI1308EDL-T1-GE3" x="-18.6" y="14.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-18.6" y="14.3" size="1.27" layer="25" align="center"/>
+<attribute name="NAME" x="-18.4" y="15.4" size="1.27" layer="25" align="center"/>
 <attribute name="PACKAGE" value="SOT-323 Vishay Semiconductor" x="-18.6" y="14.3" size="1.778" layer="27" display="off"/>
 <attribute name="PRICE" value="None" x="-18.6" y="14.3" size="1.778" layer="27" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=274603&amp;manufacturer=Vishay Siliconix&amp;part_name=SI1308EDL-T1-GE3&amp;search_term=None" x="-18.6" y="14.3" size="1.778" layer="27" display="off"/>
@@ -2664,7 +2670,7 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <attribute name="DESCRIPTION" value=" 3µA 1-Cell/2-Cell Fuel Gauge with ModelGauge " x="7" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Analog Devices" x="7" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MP" value="MAX17048G+T10" x="7" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="10.71" y="9.418" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="10.81" y="8.118" size="1.27" layer="25" rot="R180"/>
 <attribute name="PACKAGE" value="TDFN-8 Maxim" x="7" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PRICE" value="None" x="7" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=329239&amp;manufacturer=Analog Devices&amp;part_name=MAX17048G+T10&amp;search_term=None" x="7" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2719,8 +2725,7 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="1.4" y1="3.9" x2="1.35" y2="3.85" width="0.15" layer="1"/>
 <wire x1="1.35" y1="3.85" x2="1.35" y2="3.55" width="0.15" layer="1"/>
 <wire x1="1.45" y1="3.45" x2="1.35" y2="3.55" width="0.15" layer="1"/>
-<wire x1="0.3" y1="5.7" x2="0.3" y2="10.4" width="0.15" layer="16"/>
-<wire x1="0.3" y1="10.4" x2="8.6" y2="10.4" width="0.15" layer="16"/>
+<wire x1="8.6" y1="10.4" x2="0.7" y2="10.4" width="0.15" layer="16"/>
 <via x="8.6" y="10.4" extent="1-16" drill="0.15" alwaysstop="yes">
 </via>
 <wire x1="8.6" y1="10.4" x2="8.75" y2="10.55" width="0.15" layer="1"/>
@@ -2729,6 +2734,8 @@ XTAL SMD 3.2 x 1.5 mm</description>
 </via>
 <wire x1="1.4" y1="4.6" x2="1.4" y2="3.9" width="0.15" layer="16"/>
 <wire x1="1.4" y1="4.6" x2="0.3" y2="5.7" width="0.15" layer="16"/>
+<wire x1="0.3" y1="5.7" x2="0.3" y2="10" width="0.15" layer="16"/>
+<wire x1="0.7" y1="10.4" x2="0.3" y2="10" width="0.15" layer="16"/>
 </signal>
 <signal name="D-">
 <contactref element="D3" pad="6"/>
@@ -3339,13 +3346,14 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="-10.9" y1="-5.2" x2="-11.3" y2="-5.6" width="0.15" layer="1"/>
 <via x="-11.3" y="-5.6" extent="1-16" drill="0.15" alwaysstop="yes">
 </via>
-<wire x1="-15.795" y1="-9.5" x2="-15.795" y2="-10.5" width="0.15" layer="1"/>
+<wire x1="-16.795" y1="-9.6" x2="-16.795" y2="-10.6" width="0.15" layer="1"/>
 <wire x1="-15.025" y1="-6.54" x2="-15.025" y2="-6.725" width="0.15" layer="1"/>
 <wire x1="-15.025" y1="-6.725" x2="-15.5" y2="-7.2" width="0.15" layer="1"/>
 <via x="-15.5" y="-7.2" extent="1-16" drill="0.15" alwaysstop="yes">
 </via>
-<wire x1="-15.795" y1="-10.5" x2="-15.1" y2="-10.5" width="0.15" layer="1"/>
-<via x="-15.1" y="-10.5" extent="1-16" drill="0.15" alwaysstop="yes">
+<wire x1="-16.09999375" y1="-10.6" x2="-16" y2="-10.7" width="0.15" layer="1"/>
+<wire x1="-16.09999375" y1="-10.6" x2="-16.795" y2="-10.6" width="0.15" layer="1"/>
+<via x="-16" y="-10.7" extent="1-16" drill="0.15" alwaysstop="yes">
 </via>
 <wire x1="-10.45" y1="-11.8" x2="-9.5998" y2="-12.6502" width="0.15" layer="1"/>
 <wire x1="-9.5998" y1="-12.6502" x2="-9.5998" y2="-13.2285" width="0.15" layer="1"/>
@@ -3470,6 +3478,22 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="-11.7" y1="-2.6" x2="-11.5" y2="-2.6" width="0.15" layer="1"/>
 <wire x1="-11.5" y1="-2.6" x2="-10.75" y2="-1.85" width="0.15" layer="1"/>
 <wire x1="-3.205" y1="-4.8" x2="-3.15" y2="-4.745" width="0.15" layer="1"/>
+<wire x1="-16.795" y1="-9.6" x2="-16" y2="-9.6" width="0.15" layer="1"/>
+<via x="-16" y="-9.6" extent="1-16" drill="0.15" alwaysstop="yes">
+</via>
+<polygon width="0.1524" layer="1" spacing="1.27" pour="solid" thermals="yes">
+<vertex x="-24.0238" y="-18.3238"/>
+<vertex x="23.7238" y="-18.3238"/>
+<vertex x="23.7238" y="18.724275"/>
+<vertex x="-24.0238" y="19.023321875"/>
+</polygon>
+<polygon width="0.1524" layer="16" spacing="1.27" pour="solid" thermals="yes">
+<vertex x="-24.1238" y="-18.0238"/>
+<vertex x="23.9238" y="-18.0238"/>
+<vertex x="23.9238" y="18.8238"/>
+<vertex x="-24.02400625" y="18.8238"/>
+<vertex x="-24.1238" y="-17.900415625"/>
+</polygon>
 </signal>
 <signal name="HAPTIC_EN">
 <contactref element="IC4" pad="A1"/>
@@ -3834,7 +3858,7 @@ XTAL SMD 3.2 x 1.5 mm</description>
 </via>
 <wire x1="-5.7" y1="-4.5" x2="-6.095" y2="-4.5" width="0.15" layer="1"/>
 <wire x1="-6.095" y1="-4.5" x2="-6.3" y2="-4.295" width="0.15" layer="1"/>
-<wire x1="-13.9" y1="-8.6" x2="-15.695" y2="-8.6" width="0.3" layer="1"/>
+<wire x1="-13.9" y1="-8.6" x2="-16.895" y2="-8.6" width="0.3" layer="1"/>
 <via x="-13.9" y="-8.6" extent="1-16" drill="0.15" diameter="0.3" alwaysstop="yes">
 </via>
 <wire x1="-6.3" y1="-4.295" x2="-6.895" y2="-4.295" width="0.15" layer="1"/>
@@ -4319,11 +4343,11 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <contactref element="ANT1" pad="1"/>
 <contactref element="C4" pad="2"/>
 <contactref element="L1" pad="2"/>
-<wire x1="-18.3" y1="-8.4" x2="-16.505" y2="-8.4" width="0.15" layer="1"/>
-<wire x1="-16.505" y1="-8.4" x2="-16.305" y2="-8.6" width="0.15" layer="1"/>
-<wire x1="-16.305" y1="-8.6" x2="-16.305" y2="-9.4" width="0.15" layer="1"/>
-<wire x1="-16.305" y1="-9.4" x2="-16.405" y2="-9.5" width="0.15" layer="1"/>
-<wire x1="-16.405" y1="-9.5" x2="-16.405" y2="-10.5" width="0.15" layer="1"/>
+<wire x1="-17.505" y1="-8.6" x2="-18.605" y2="-9.7" width="0.15" layer="1"/>
+<wire x1="-18.605" y1="-9.7" x2="-18.9" y2="-9.7" width="0.15" layer="1"/>
+<wire x1="-17.505" y1="-8.6" x2="-17.505" y2="-9.5" width="0.15" layer="1"/>
+<wire x1="-17.405" y1="-9.6" x2="-17.505" y2="-9.5" width="0.15" layer="1"/>
+<wire x1="-17.405" y1="-9.6" x2="-17.405" y2="-10.6" width="0.15" layer="1"/>
 </signal>
 <signal name="SCK">
 <contactref element="J1" pad="13"/>
@@ -4741,10 +4765,10 @@ XTAL SMD 3.2 x 1.5 mm</description>
 <wire x1="1.9" y1="9.7" x2="1.5" y2="10.1" width="0.3" layer="15"/>
 <wire x1="1.5" y1="10.1" x2="1" y2="10.1" width="0.3" layer="15"/>
 <wire x1="1" y1="10.1" x2="0.9" y2="10" width="0.3" layer="15"/>
-<wire x1="0.9" y1="10" x2="0.9" y2="9.9" width="0.3" layer="15"/>
-<via x="0.9" y="9.9" extent="1-16" drill="0.15" alwaysstop="yes">
+<wire x1="0.9" y1="10" x2="0.9" y2="9.8" width="0.3" layer="15"/>
+<via x="0.9" y="9.8" extent="1-16" drill="0.15" alwaysstop="yes">
 </via>
-<wire x1="0.9" y1="9.9" x2="0.9" y2="10.4" width="0.3" layer="1"/>
+<wire x1="0.9" y1="9.8" x2="0.9" y2="10.4" width="0.3" layer="1"/>
 <wire x1="0.9" y1="10.4" x2="1.1" y2="10.6" width="0.3" layer="1"/>
 <wire x1="1.1" y1="10.6" x2="2.8" y2="10.6" width="0.3" layer="1"/>
 </signal>
