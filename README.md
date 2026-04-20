@@ -2,7 +2,7 @@
 ### Diagrama Bloc
 <img width="1920" height="1080" alt="Diagrama_bloc" src="https://github.com/user-attachments/assets/fcd2e858-0bdc-409f-ad72-99f6c71a0b89" />
 
-### Tabel BOM (Bill of Materials)
+## Tabel BOM (Bill of Materials)
 
 | Componenta | Referinta | Link | Datasheet |
 | :--- | :---: | :--- | :--- |
@@ -30,7 +30,7 @@
 | **0603N101Z160PHT** | `0603 Capacitors` | [JLC Parts](https://jlcpcb.com/partdetail/1943-CL10B104KB8NNNC/C1591) | [Datasheet](https://static.chipdip.ru/lib/970/DOC041970475.pdf) |
 | **CPF0201D7K68C1** | `0201 Resistors` | [JLC Parts](https://jlcpcb.com/partdetail/TEConnectivity-CPF0201D10KC1/C4187156) | [Datasheet](https://www.snapeda.com/parts/CPF0201D4K75E1/TE%20Connectivity/datasheet/) |
 
-### Functionalitatea Hardware
+## Functionalitatea Hardware
 #### MCU
 - Componenta: Nordic Semiconductor nRF52840
 - Specificatii: Nucleu ARM Cortex-M4 cu FPU la 64 MHz, 1MB Flash si 256KB RAM
@@ -61,3 +61,27 @@
 - BQ25180 gestioneaza incarcarea bateriei prin USB-C si ofera protectie la supra-tensiune si control termic
 - Convertorul RT6160 asigura o tensiune constanta de 3.3V necesara componentelor
 - Dioda USBLC6-2SC6Y protejeaza liniile de date USB impotriva descarcarilor electrostatice
+
+## Pinii nRF52840
+### Tabel Alocare Pini nRF52840
+
+| Pin | Semnal / Functie | Explicatie |
+| :--- | :--- | :--- |
+| **P0.00 / P0.01** | XL1/XL2 | Conexiune pentru cristalul RTC de 32.768kHz, necesar pentru low-power timekeeping |
+| **P0.02** | `SCK` | Clock pentru magistrala SPI, dedicat comunicatiei cu display-ul E-Paper |
+| **P0.03** | `MOSI` | Linia de date Master Out Slave In pentru transferul imaginii catre display |
+| **P0.05** | `EPD_CS` | Chip Select pentru activarea display-ului pe magistrala SPI |
+| **P0.06** | `SDA` | Linia de date pentru magistrala I2C (partajata de BMA423, BQ25180, MAX17048) |
+| **P0.07** | `SCL` | Linia de ceas pentru magistrala I2C |
+| **P0.08** | `IMU_INT1` | Intrerupere primara de la BMA423 |
+| **P0.10** | `ALERT` | Semnal de alerta |
+| **P0.11** | `PMIC_INT` | Intrerupere de la IC-ul de management al bateriei |
+| **P0.12** | `HAPTIC_EN` | Activeaza driverul DRV2605 |
+| **P0.13** | `SW_UP` | Buton UP |
+| **P0.14** | `SW_DN` | Buton DOWN |
+| **P0.15** | `EPD_DC` | Data / Command select pentru display |
+| **P0.16** | `EPD_RST` | Reset hardware pentru dispay |
+| **P0.17** | `EPD_BUSY` | Statusul ecranului |
+| **P0.18** | `RESET` | Reset general, legat la TC2030. |
+| **P1.00** | `SW_ENT` | Buton ENTER |
+| **P1.08** | `IMU_INT2` | Intrerupere secundara de la BMA423 |
