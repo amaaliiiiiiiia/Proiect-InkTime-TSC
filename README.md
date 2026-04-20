@@ -85,3 +85,6 @@
 | **P0.18** | `RESET` | Reset general, legat la TC2030. |
 | **P1.00** | `SW_ENT` | Buton ENTER |
 | **P1.08** | `IMU_INT2` | Intrerupere secundara de la BMA423 |
+
+## Justificarea Erorilor
+Am acceptat cele 13 erori de tip Copper Clearance de pe componenta IC2 deoarece am prioritizat rutarea corecta a traseelor de tip 3V3, folosind 0.3mm.
