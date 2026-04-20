@@ -30,4 +30,34 @@
 | **0603N101Z160PHT** | `0603 Capacitors` | [JLC Parts](https://jlcpcb.com/partdetail/1943-CL10B104KB8NNNC/C1591) | [Datasheet](https://static.chipdip.ru/lib/970/DOC041970475.pdf) |
 | **CPF0201D7K68C1** | `0201 Resistors` | [JLC Parts](https://jlcpcb.com/partdetail/TEConnectivity-CPF0201D10KC1/C4187156) | [Datasheet](https://www.snapeda.com/parts/CPF0201D4K75E1/TE%20Connectivity/datasheet/) |
 
+### Functionalitatea Hardware
+#### MCU
+- Componenta: Nordic Semiconductor nRF52840
+- Specificatii: Nucleu ARM Cortex-M4 cu FPU la 64 MHz, 1MB Flash si 256KB RAM
+- Este responsabil de sincronizarea datelor, interpretarea miscarii ceasului, optimizarea consumului de energie si redarea informatiilor pe display
 
+#### Display E-Paper
+- Conectat prin interfata SPI
+- Este un afisaj bi-stabil, iar odata ce imaginea este formata de pixeli, ramane pe ecran fara sa necesite alimentare
+
+#### Hapic Driver
+- Conectat prin I2C
+- Folosit pentru notificari, alarme, prin intermediul unui motor de vibratii de tip ERM
+
+#### BMA423
+- Conectat prin I2C
+- Folosit pentru numararea pasilor si pentru detectarea miscarii mainii (tilt-to-wake)
+
+#### Fuel Gauge (MAX17048)
+- Conectat prin I2C
+- Monitorizeaza tensiunea bateriei si ofera informatii despre starea de incarcare
+- Nu are nevoie de rezistenta de sens, deci economisseste spatiu pe PCB
+
+#### Sursa de energie
+- Utilizarea unui LiPo Charger reincarcabil de 3.7V
+- Asigura o autonomie de lunga durata datorita componentelor low-power folosite
+
+#### Managementul Alimentarii
+- BQ25180 gestioneaza incarcarea bateriei prin USB-C si ofera protectie la supra-tensiune si control termic
+- Convertorul RT6160 asigura o tensiune constanta de 3.3V necesara componentelor
+- Dioda USBLC6-2SC6Y protejeaza liniile de date USB impotriva descarcarilor electrostatice
